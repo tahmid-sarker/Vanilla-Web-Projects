@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+/* Global Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+.section-title {
+  color: rgb(39, 39, 39);
+  font-family: Lato;
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.section-description {
+  color: rgba(39, 39, 39, 0.6);
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #27272799;
+  font-size: 18px;
+}
+
+.btn {
+  background-color: rgb(229, 84, 115);
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #902142;
+}
+
+.primary {
+  color: #E55473;  
+}
+/*Header*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 120px;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+nav ul {
+  display: flex;
+  gap: 32px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #e55473;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+}
+
+nav button {
+  color: #e55473;
+  border: 2px solid #e55473;
+  border-radius: 8px;
+  background-color: #e5547305;
+  padding: 10px 30px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #e55473;
+  color: white;
+}
+
+/* Section One */
+#section-one {
+  background-color: rgba(229, 84, 115, 0.1);
+  display: flex;
+  justify-content: space-between;
+  gap: 97px;
+  padding: 20px 120px 0px;
+}
+
+#section-one h1 {
+  font-size: 80px;
+  font-weight: 800;
+}
+
+#section-one p {
+  color: rgba(39, 39, 39, 0.6);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#section-one img {
+  width: 100%;
+  height: 100%;
+}
+
+#section-one div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+  width: 50%;
+}
+
+/* Section Two */
+#section-two {
+  margin-top: 85px;
+  padding: 20px 120px;
+}
+
+.feature-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 24px;
+  padding-top: 50px;
+}
+
+.feature-card {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.feature-img {
+  border-radius: 300px 300px 0px 0px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.feature-img img {
+  width: 240px;
+}
+
+.one {
+  background: rgba(167, 33, 98, 0.15);
+}
+
+.two {
+  background: rgba(5, 151, 160, 0.15);
+  align-items: center;
+}
+
+.three {
+  background: rgba(71, 125, 17, 0.15);
+}
+
+/* Section Three */
+#section-three {
+  background-color: #2727270D;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 85px 100px;
+  margin: 64px 120px;
+}
+
+.service-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-box img {
+  width: 88px;
+}
+
+.service-box h4 {
+  margin-top: 24px;
+  font-weight: 600;
+}
+
+/* Section Four */
+#section-four {
+  background-color: #e554731a;
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.offer-content {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Section Five */
+#section-five {
+  margin: 64px 120px;
+}
+
+#section-five > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+#section-five img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Section Six */
+#section-six {
+  background: url("/assets/Rectangle-9.png") no-repeat center center/cover;
+  padding: 120px 285px;
+  margin: 64px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-six div {
+  display: flex;
+  gap: 16px;
+}
+
+#section-six input {
+  width: 500px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 80px 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
