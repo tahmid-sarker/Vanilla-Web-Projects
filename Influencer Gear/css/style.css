@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Root Variables */
+:root {
+  --primary-color: #e02c6d;
+  --secondary-color: #ff3366;
+  --title-color: black;
+  --text-color: gray;
+  --text-bold: 700;
+  --text-semibold: 500;
+  --background-color: #f5f5f5;
+  --star-color: #fb8200;
+  --white: #ffffff;
+  --shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+main {
+  margin: 50px 100px;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: var(--text-semibold);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--secondary-color);
+  outline: none;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+  color: var(--title-color);
+}
+
+header h2 {
+  display: none;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  font-size: 16px;
+  font-weight: var(--text-semibold);
+}
+
+/* Hero Section */
+section:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  background-color: var(--white);
+  padding: 50px;
+  border-radius: 10px;
+}
+
+section:first-child div:first-child {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+section:first-child div:first-child h1 {
+  font-size: 52px;
+  color: var(--title-color);
+}
+
+section:first-child div:first-child p {
+  font-size: 18px;
+  font-weight: var(--text-semibold);
+  color: var(--text-color);
+}
+
+section:first-child img {
+  max-width: 400px;
+}
+
+section:first-child div:last-child {
+  width: 500px;
+  height: 500px;
+  background: url("/assets/images/Circle.svg") no-repeat center right / 450px
+    450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Logos Section */
+section:nth-child(2) h1 {
+  font-size: 28px;
+  color: var(--title-color);
+}
+section:nth-child(2) > div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+  padding: 30px 60px;
+  background: linear-gradient(
+    135deg,
+    rgba(192, 204, 218, 0.1) 0%,
+    rgba(192, 204, 218, 0.6) 50%,
+    rgba(192, 204, 218, 0.1) 100%
+  );
+}
+
+/* Collection Section */
+section:nth-child(3) > div {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+section:nth-child(3) h1 {
+  font-size: 28px;
+  color: var(--title-color);
+}
+
+section:nth-child(3) h2 {
+  font-size: 24px;
+  color: var(--title-color);
+}
+
+section:nth-child(3) p {
+  font-size: 18px;
+  color: var(--title-color);
+  font-weight: var(--text-semibold);
+}
+
+section:nth-child(3) > div > div {
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  text-align: left;
+}
+
+section:nth-child(3) > div > div > div:first-child {
+  text-align: center;
+}
+
+section:nth-child(3) ul li {
+  font-weight: var(--text-semibold);
+}
+
+section:nth-child(3) > div > div i {
+  color: var(--star-color);
+}
+
+section:nth-child(3) > div > div small {
+  font-weight: var(--text-semibold);
+}
+
+section:nth-child(3) > div:last-child {
+  color: var(--primary-color);
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+/* Newsletter Section */
+section:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 10%;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+section:nth-child(4) div {
+  width: 50%;
+}
+
+section:nth-child(4) h1 {
+  font-size: 28px;
+  color: var(--title-color);
+  margin-bottom: 15px;
+}
+
+section:nth-child(4) p {
+  color: var(--text-color);
+  font-weight: var(--text-semibold);
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--title-color);
+  color: var(--white);
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+footer a {
+  font-size: 18px;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px 30px;
+  }
+
+  header h2 {
+    display: block;
+    cursor: pointer;
+  }
+
+  header > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  main {
+    margin: 10px 15px;
+    text-align: center;
+  }
+
+  section:first-child {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  section:first-child div:first-child h1 {
+    font-size: 28px;
+  }
+
+  section:first-child img {
+    width: 50%;
+  }
+
+  section:first-child div:last-child {
+    width: 250px;
+    height: 250px;
+    background: url("/assets/images/Circle.svg") no-repeat center / 250px 250px;
+  }
+
+  section:nth-child(2) > div {
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  section:nth-child(2) h2 {
+    font-size: 24px;
+  }
+
+  section:nth-child(3) > div {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section:nth-child(3) > div:last-child {
+    justify-content: center;
+  }
+
+  section:nth-child(4) {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  section:nth-child(4) div {
+    width: 100%;
+  }
+
+  section:nth-child(4) img {
+    width: 100%;
+  }
+
+  footer ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
