@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+@media screen and (max-width: 576px) {
+  /* Header Styles */
+  header {
+    padding: 0.625rem 1.25rem;
+    border-bottom: 1px solid orange;
+  }
+
+  header h1,
+  header ul,
+  header button,
+  .left-div {
+    display: none;
+  }
+
+  .menubar {
+    display: block;
+  }
+
+  /* Section 2: Marquee */
+  #section-1 {
+    display: none;
+  }
+
+  /* Section 2: Hero */
+  #section-2 {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.25em;
+  }
+
+  #section-2 .hero-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.125em;
+  }
+
+  #section-2 h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  #section-2 p {
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  #section-2 button {
+    padding: 0.375rem 1.5rem;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+
+  #section-2 .hero-btn {
+    display: flex;
+    justify-content: center;
+  }
+
+  #section-2 img {
+    width: 100%;
+    height: auto;
+  }
+  /* Section 3: Standard Curriculum */
+  #section-3 {
+    padding: 1.25rem;
+  }
+
+  #section-3 h1 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+
+  #section-3 .curriculum-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #section-3 .arrow {
+    display: none;
+  }
+
+  /* Section 4: Our Stories */
+  #section-4 {
+    padding: 1.25rem;
+  }
+
+  #section-4 h1 {
+    font-size: 2rem;
+    line-height: 3.594rem;
+    margin-bottom: 1.25rem;
+  }
+
+  #section-4 .right-div h2 {
+    margin: 0.892rem 2.038rem 1.249rem 1.411rem;
+    font-size: 0.571rem;
+    font-weight: 700;
+    line-height: 1.069rem;
+  }
+
+  #section-4 .right-div img {
+    width: 10.829rem;
+    height: 6.587rem;
+  }
+
+  #section-4 .right-div .story-card-2,
+  .story-card-3,
+  .story-card-4,
+  .story-card-5 {
+    width: 10.818rem;
+    height: 11.224rem;
+    background: rgb(255, 255, 255);
+  }
+
+  #section-4 .right-div button {
+    width: 6.494rem;
+    height: 1.427rem;
+    left: 1.427rem;
+    top: 5.873rem;
+    border-radius: 1.784rem;
+    font-size: 0.571rem;
+  }
+
+  .story-btn-container {
+    margin: 1.125em 0;
+  }
+
+  /* Footer */
+  footer {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+}
