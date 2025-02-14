@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>DevBoard | Blogs</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <style>
+    .poppins-font {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+    }
+  </style>
+ </head>
+ <body class="bg-blue-50 poppins-font">
+  <div class="max-w-screen-xl mx-auto p-8">
+
+    <!-- Header Section -->
+    <header class="flex items-center justify-between bg-white p-6 rounded-lg shadow-lg">
+      <div class="flex items-center space-x-4">
+        <div>
+          <img alt="Logo" src="assets/logo.png" class="h-8 w-8"/>
+        </div>
+        <h1 class="text-3xl font-medium text-gray-700">Dev<span class="font-bold text-indigo-600">Board</span></h1>
+      </div>
+      <button class="bg-indigo-600 text-white px-5 py-3 rounded-lg hover:bg-indigo-700 transition">
+        <a href="index.html">Back to Desk</a>
+      </button>
+    </header>
+
+    <!-- Main content -->
+    <main class="mt-8">
+      <h1 class="text-3xl text-center font-semibold mb-6">Blogs</h1>
+
+      <section class="space-y-6">
+        <article class="bg-white p-6 rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold mb-2">Question-1: What are the different ways to select an element in the DOM?</h2>
+          <hr class="my-2 border-gray-300">
+          <p class="text-gray-700 mt-2">
+            There are several methods to select elements in the DOM. We can use <code>getElementById</code> to target an element by its ID. Similarly, <code>getElementsByClassName</code> allows us to select elements by class, and <code>getElementsByTagName</code> can be used for tag names. For more advanced targeting, <code>querySelector</code> gives us the flexibility to use any CSS selector. If we need to select multiple elements, <code>querySelectorAll</code> is the way to go.
+          </p>
+        </article>
+
+        <article class="bg-white p-6 rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold mb-2">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+          <hr class="my-2 border-gray-300">
+          <p class="text-gray-700 mt-2">
+            These three properties are often confused but serve different purposes. <strong>innerHTML</strong> gives us both the text and HTML content inside an element. <strong>innerText</strong> shows us only the visible text on the screen, ignoring hidden or off-screen content. <strong>textContent</strong> returns all the text in an element, including hidden text, but it strips away any HTML tags.
+          </p>
+        </article>
+
+        <article class="bg-white p-6 rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold mb-2">Question-3: How do you add an event listener in JavaScript?</h2>
+          <hr class="my-2 border-gray-300">
+          <p class="text-gray-700 mt-2">
+            We can add an event listener using the <code>addEventListener</code> method. For example, if we want to attach a click event to a button, we can do it like this: <code>button.addEventListener('click', () => alert('Button clicked!'))</code>. This way, every time the button is clicked, the alert will be triggered.
+          </p>
+        </article>
+
+        <article class="bg-white p-6 rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold mb-2">Question-4: What is the purpose of the 'this' keyword in JavaScript?</h2>
+          <hr class="my-2 border-gray-300">
+          <p class="text-gray-700 mt-2">
+            The <code>this</code> keyword refers to the object that the function is associated with. Inside an object method, <code>this</code> points to the object itself. In regular functions, <code>this</code> usually refers to the global object. It helps us identify and access the context in which the code is being executed.
+          </p>
+        </article>
+
+        <article class="bg-white p-6 rounded-xl shadow-md">
+          <h2 class="text-xl font-semibold mb-2">Question-5: How do you create a promise in JavaScript?</h2>
+          <hr class="my-2 border-gray-300">
+          <p class="text-gray-700 mt-2">
+            To create a promise, we use the <code>Promise</code> constructor, which takes a function with two parameters: <code>resolve</code> and <code>reject</code>. We call <code>resolve</code> when the task is successful, and <code>reject</code> when there's an error. This allows us to handle asynchronous tasks in a more structured way.
+          </p>
+        </article>
+      </section>
+    </main>
+  </div>
+ </body>
+</html>
